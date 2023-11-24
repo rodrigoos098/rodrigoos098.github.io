@@ -29,14 +29,32 @@ body{
 }
 
 #foto-perfil {
-    max-width: 250px;
-    border-radius: 125px;
+    width: 250px;
+    height: 250px;
+    position: relative;
     transition: all 0.2s ease-in-out;
 }
 
-#foto-perfil:hover {
+#foto-perfil img {
+    max-width: 100%;
+    border-radius: 125px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+#foto-perfil #foto1 {
+    opacity: 1;
+}
+#foto-perfil #foto2 {
+    opacity: 0;
+}
+
+#foto-perfil:hover img {
     transform: scale(1.1);
 }
+
 
 .overlay {
     height: 100%;
