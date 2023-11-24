@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rodrigoos</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
     <div class="overlay"></div>
-    <div class="content">
+    <div class="content" id="home">
         <img src="imgs/foto-eu-1.webp" alt="Eu" id="foto-perfil">
         <h1>olá! eu sou rodrigo <span style="font-weight: 500;">ツ</span> </h1>
         <div style="margin-bottom: 1rem;">
@@ -17,19 +18,68 @@
             <p>> entusiasta em desempenho e usabilidade ⚡</p>
             <p>> role player & contador de histórias 🧙🏽‍♂️</p>
         </div>
-    
-        <button>sobre mim</button>
-    
+
+        <button onclick="aboutShow()">sobre mim</button>
+
         <div style="margin-top: 2rem; display: flex; gap: 2rem;">
-            <a class="icone" href="https://rodrigoos.me/">
+            <a class="icone" href="https://rodrigoos.me/" target="_blank">
                 <img src="imgs/earth-americas-solid.svg" alt="Website" width="20px">
             </a>
-            <a class="icone" href="https://github.com/rodrigoos098">
+            <a class="icone" href="https://github.com/rodrigoos098" target="_blank">
                 <img src="imgs/github.svg" alt="Github" width="20px">
             </a>
-            <a class="icone" href="https://www.instagram.com/rodrigoos.me/">
+            <a class="icone" href="https://www.instagram.com/rodrigoos.me/" target="_blank">
                 <img src="imgs/instagram.svg" alt="Instagram" width="20px">
             </a>
+        </div>
+    </div>
+    <div class="content" id="about">
+        <button onclick="aboutHide()" style="padding: 1rem; margin-top: 2rem;">
+            <img src="imgs/arrow-left-solid.svg" alt="Voltar" width="16px">
+        </button>
+        <div style="padding: 1rem;">
+            <h1>sobre mim</h1>
+            <p>
+                Rodrigo Oliveira Santos. 25 anos. Graduando em Sistemas de Informação pela Universidade Federal de Sergipe. <br><br>
+                Sou fascinado por computadores desde criança. Descobri a programação enquanto pesquisava na internet como eram criados os videogames, e nessa aventura nasceu meu primeiro Hello World em Pascal. <br><br>
+                Hoje atuo como desenvolvedor web full-stack, onde meu maior foco é em desempenho, usabilidade e responsividade. Acredito que um sistema não deve apenas funcionar, mas também ser eficiente e intuitivo. <br><br>
+                Sou criativo. Gosto de buscar novas formas mais eficientes de resolver problemas. Me sinto mais a vontade desenvolvendo algo que nunca fiz antes, do que repetindo tarefas antigas. <br><br>
+                Tenho facilidade em aprender coisas novas quando preciso e conviver bem com pessoas que pensam diferente. <br><br>
+            </p>
+            <h1>skills</h1>
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <img height="64px" src="imgs/Laravel.svg" alt="laravel">
+                    <p>Laravel</p>
+                </div>
+                <div style="text-align: center;">
+                    <img height="64px" src="imgs/node.svg" alt="node">
+                    <p>Node.js</p>
+                </div>
+                <div style="text-align: center;">
+                    <img height="64px" src="imgs/git.svg" alt="git">
+                    <p>Git</p>
+                </div>
+                <div style="text-align: center;">
+                    <img height="64px" src="imgs/bootstrap.svg" alt="bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+                <div style="text-align: center;">
+                    <img height="64px" src="imgs/tailwind.svg" alt="tailwind">
+                    <p>Tailwindcss</p>
+                </div> 
+            </div> <br>
+            <h1>hobbies</h1>
+            <h4>Eu amo role-playing games! ✨</h4>
+            <li>Tanto os de tabuleiro, quanto os eletrônicos</li>
+            <li>A quantidade de horas que eu gastei jogando World of Warcraft dariam pra completar duas graduações.</li>
+            <h4>Eu amo música! 🎶</h4>
+            <li>Coleciono fones de ouvido de preços e sonoridades diferentes.</li>
+            <li>Consigo identificar quase qualquer música da discografia da Taylor Swift, escutando apenas 2 segundos.</li>
+            <h4>Eu amo os Desbravadores! 🏕️</h4>
+            <li>Faço trabalho voluntário no Clube de Desbravadores! Um clube voltado para juvenis entre 10 e 15 anos.</li>
+            <li>Fazemos trilhas, acampamentos, projetos sociais e outra dúzia de coisas legais.</li>
+
         </div>
     </div>
 </body>
