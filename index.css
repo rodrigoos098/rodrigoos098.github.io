@@ -26,6 +26,8 @@ body{
 #about {
   opacity: 0;
   z-index: -1;
+  display: flex;
+  justify-content: center;
 }
 
 #foto-perfil {
