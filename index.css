@@ -4,7 +4,6 @@ body{
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow: hidden;
 }
 
 .content {
@@ -40,8 +39,8 @@ body{
 }
 
 .overlay {
-    height: 125%;
-    width: 125%;
+    height: 100%;
+    width: 100%;
     background-color: rgb(0, 0, 0, 0.925);
     position: absolute;
     z-index: -1;
